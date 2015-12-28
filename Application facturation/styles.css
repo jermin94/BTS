@@ -1,0 +1,128 @@
+body
+{
+	background-color: #840E49;
+}
+
+ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#container
+{
+	width: 740px;
+	height: 500px;
+	border:1px solid #fff;
+	margin: 0 auto;
+}
+
+.titre
+{
+	text-align: center;
+	font-family: "century Gothic","Helvertica Neue",Helvertica,sans-serif;
+	color :#fff;
+	font-size: 4.0 em;
+	text-shadow: 0px 0px 12px #ccc;
+}
+
+/* menu principal*/
+.nav >li
+{
+	
+	background: #e8e5e5;
+}
+
+
+.nav > li 
+{
+	display: inline-block; /* permet de mettre liste en verticale*/
+	vertical-align:top;
+	width: 200px;
+	border-right: 1px solid #000;
+	height: 40px
+	margin: 0 -5px 0 0;
+}
+
+.nav > li > a
+{
+
+	display: block;
+	color:#000;
+	text-decoration:none;
+	font-family: "century Gothic","Helvertica Neue",Helvertica,sans-serif;
+	font-weight: bolt;
+	width: inherit;
+	height: inherit;
+	text-align: center;
+	line-height: 40px
+	
+	webkit-transition: all ease-in 0.3s;
+}
+
+.nav > li:hover > a 
+{
+	background: #161616;
+	color:#fff;
+	
+}
+/* menu secondaire*/
+
+.nav > li > .dropdown 
+{
+	background: #161616;
+	display: none;
+}
+
+.nav > li:hover > .dropdown
+{
+	display: block;
+}
+
+.nav > li > .dropdown >li
+{
+	width:inherit;
+	height: 40px;
+	
+}
+
+.nav > li > .dropdown >li > a
+{
+	display:block;
+	width: inherit;
+	height: inherit;
+	line-height:40px;
+	padding:0,0,0,5px;
+	color:#fff;
+	text-decoration: none;
+	
+}
+.nav > li > .dropdown >li:hover > a
+{
+	background:#e8e5e5;
+	color:#000;
+}
+/* aligner les labels*/
+label
+{
+	display: block;/* La balise devient de type block pour pouvoir appliquer largeur*/
+	width: 150px;
+	float: left;/* pour eviter le retour à la ligne et mettre formulaires à gauche*/
+}
+/* centrer et souligner mes titres*/
+h1
+{
+	text-align: center;
+	text-decoration: underline;
+}
+
+#ContactForm {
+   position:absolute;
+   top:50%;
+   left:50%;
+   width:500px; /* A toi de donner la bonne largeur */
+   height:100px; /* A toi de donner la bonne hauteur */
+   margin-left:-210px; /* -largeur/2 */
+   margin-top:-160px; /* -hauteur/2 */
+   
+}
