@@ -1,0 +1,46 @@
+
+
+back{
+	background-color : green
+}
+
+p {
+    max-width: 250px;
+}
+body {
+ background-color:#4BB5C1; 
+ font-family: Verdana, sans-serif; 
+ font-size: 100%;
+ }
+h1 {
+ font-size: 200%; 
+ color: navy; 
+ text-align: center;
+ }
+h2 {
+ font-size: 150%; 
+ color: red; 
+ padding-left: 15px;
+ }
+ champs {
+ font-size : 100%;
+ color : black;
+ text-align :center;
+ }
+b{
+ color: black; 
+ }
+a:link {
+ color: green;
+ text-decoration: underline;
+ }
+a:visited {
+ color: gray;
+ }
+a:hover {
+ color: red;
+ text-decoration: none;
+}
+a:active, a:focus {
+ color: red;
+}
