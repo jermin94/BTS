@@ -1,0 +1,63 @@
+#page {
+	margin-left: auto;
+	margin-right: auto;
+	width : 1000px;
+	 }
+	  
+#menu {
+	background-color : #E6F8E0;
+	  }
+	  
+.element_menu {
+	b;
+	background-color: white;
+	margin bottom: 20 px;
+	   }
+
+a:active {
+	color: black;
+		 }
+
+a:visited {
+	color: black;
+		 }
+
+a:link {
+	color: black;
+	   }
+
+a:hover {
+	font-style: italic;
+	    }
+
+#col2 {
+	float : left;
+	width: 800px;
+	height: 100%;
+	background-color : white;
+	padding-left : 15px;
+	  }
+	  
+table
+{
+    border-collapse: collapse;
+	padding : 2px;
+	text-align:center;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+	padding : 2px;
+}
+
+img.portrait
+{
+	height:200px;
+	width:150px;
+}
+
+img.paysage
+{
+	height:200px;
+	width:300px;
+}
