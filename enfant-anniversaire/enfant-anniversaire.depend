@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1421942750 source:k:\si4\enfant-anniversaire\tenfant.c
+	<stdio.h>
+	<stdlib.h>
+
+1422994290 source:e:\si4\enfant-anniversaire\tenfant.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1423153206 source:e:\si6\enfant-anniversaire\ssprg.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"struct.h"
+	"void.h"
+
+1422994920 e:\si6\enfant-anniversaire\struct.h
+
+1423152822 e:\si6\enfant-anniversaire\void.h
+
+1423152976 source:e:\si6\enfant-anniversaire\tenfant.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"struct.h"
+	"void.h"
+
+1423152940 source:k:\si6\enfant-anniversaire\ssprg.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"struct.h"
+	"void.h"
+
+1422994920 k:\si6\enfant-anniversaire\struct.h
+
+1423152822 k:\si6\enfant-anniversaire\void.h
+
+1423152976 source:k:\si6\enfant-anniversaire\tenfant.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"struct.h"
+	"void.h"
+

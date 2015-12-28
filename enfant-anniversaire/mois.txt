@@ -1,0 +1,64 @@
+ #include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<time.h>
+typedef struct tenfant tenfant;
+typedef struct daten daten;
+typedef struct temploye temploye;
+
+struct daten
+{
+    int jour;
+    int mois;
+    int annee;
+};
+ struct tenfant
+{
+    char nom[10];
+    char prenom[10];
+    daten tdate;
+};
+struct temploye
+{
+    char nom[10];
+    char prenom[10];
+    int  nbenf ;
+    tenfant prog[10];
+};
+
+int main()
+{
+    temploye pers[1];
+
+    printf("entrer votre nom\n");
+    scanf("%s",pers[0].nom);
+    printf("entrer votre prenom\n");
+    scanf("%s",pers[0].prenom);
+    printf("entrer le nombre_enfants \n");
+    scanf("%d",&pers[0].nbenf);
+    printf("entrer le nom_de_enfants \n");
+    scanf("%s",pers[0].prog[0].nom);
+    fflush(stdin);
+    printf("entrer le prenom_de_enfants \n");
+    scanf("%s",pers[0].prog[0].prenom);
+    printf("entrer la date_de_enfants \n");
+    fflush(stdin);
+    scanf("%d",&pers[0].prog[0].tdate.jour);
+    fflush(stdin);
+    scanf("%d",&pers[0].prog[0].tdate.mois);
+    fflush(stdin);
+    scanf("%d",&pers[0].prog[0].tdate.mois);
+
+
+    time_t temps;
+    struct tm date;
+    time(&temps);
+    date = *localtime(&temps);
+    printf("",date.tm_mon+1);
+
+
+
+
+    return 0;
+}
+
