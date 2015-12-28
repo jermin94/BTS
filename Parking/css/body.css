@@ -1,0 +1,122 @@
+.image-container{
+	height:200px;
+	width:29%;
+	background-color:#e6e6e6;
+	padding:10px;
+	float:left;
+	box-shadow:0 2px 0 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:0 2px 0 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:0 2px 0 0 rgba(0, 0, 0, 0.2);
+	margin-right:1%;
+	overflow:hidden;
+	text-align:center;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+.chatbox-respond{
+	width:98%;
+	padding:5px;
+}
+
+.chatbox{
+	border:1px solid grey;
+	height:500px;
+	overflow-Y:scroll;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	box-shadow:0px 2px 0px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0px 2px 0px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow:0px 2px 0px 0px rgba(0,0,0,0.2);
+	padding:10px;
+}
+
+#webcontainer{
+	background-color:#ffffff;
+	padding:10px;
+	color:#333;
+	position:absolute;
+	float:left;
+	width:82%;
+	margin-left:14%;
+	margin-top:30px;
+	margin-bottom:30px;
+	box-shadow:0 0 5px 0 rgba(0, 0, 0, 0.3);
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size:13px;
+}
+
+#webcontainer2{
+	background-color:#ffffff;
+	padding:10px;
+	color:#333;
+	width:400px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-100px 0 0 -200px;
+	box-shadow:0 0 5px 0 rgba(0, 0, 0, 0.3);
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size:13px;
+}
+
+
+.content{
+	color:white;
+	padding:10px;
+	font-size:13px;
+	border-top:1px solid rgba(0, 0, 0, 0.9);
+	border-bottom:1px solid rgba(0, 0, 0, 0.9);
+	background-color:rgba(0, 0, 0, 0.1);
+}
+
+.title{
+	background-color:rgba(0, 0, 0, 0.2);
+	border-bottom:1px rgba(0, 0, 0, 0.9);
+	padding:10px;
+	color:white;
+	font-size:15px;
+	border-bottom:1px solid rgba(255, 255, 255, 0.2);
+}
+
+#sidebar{
+	height:100%;
+	width:12%;
+	background-color:#242528;
+	float:left;
+	position:fixed;
+}
+
+/* Apparence du formulaire de connexion */
+.formulaire{
+	margin-top:10px;
+}
+
+.connect{
+	padding:10px;
+	background-color:rgba(0, 0, 0, 0.6);
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	box-shadow:0 2px 0 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:0 2px 0 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:0 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+#wrapper-connect{
+	width:400px;
+	margin:250px auto;
+}
+
+#center
+{
+	margin: auto;
+    width: 60%;
+    padding: 10px;
+}
