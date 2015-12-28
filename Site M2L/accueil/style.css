@@ -1,0 +1,42 @@
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+.personne {
+  position: fixed;
+}
+
+body {
+background-color : #D8D8D8;
+}
+
+#site {
+	margin-left: auto;
+	margin-right: auto;
+	width : 300px;
+	margin-top: -7px;
+	padding: 10px;
+}
+
+.categ {
+	width : 100px;
+	height: 100px;
+	background : #ffffff;
+	border-radius: 10px 10px 10px 10px;
+	float : left ;
+	margin : 5px;
+}
+
+.espace {
+	margin : center;
+	padding : 2px;
+	text-align: center;
+	font: 14px Arial, Helvetica, sans-serif;
+	color : black;
+}
+
+.categ :hover{
+	background : #5858FA;
+	border-radius: 10px 10px 10px 10px;
+}
