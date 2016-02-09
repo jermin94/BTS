@@ -1,0 +1,123 @@
+input[type='radio'], 
+input[type='checkbox'] {
+    display: none;
+}
+/*
+style the labels
+add extra padding to the left side
+*/
+input[type='radio'] + label,
+input[type='checkbox'] + label {
+    margin: 2px;
+    clear: none;
+    display: inline-block;
+    padding: 15px 15px 15px 45px;
+    cursor: pointer;
+    background: #5d6e78;
+    border-bottom: 3px solid #3f4b52;
+    color: #eaeaea;
+    border-radius: 5px;
+    position: relative;
+}
+/*
+hover-state for the labels
+my design reduc
+*/
+input[type='radio'] + label:hover,
+input[type='checkbox'] + label:hover {
+    background: #6b7f8b;
+    border-bottom: 2px solid #3f4b52;
+}
+/*
+style an absolutely positioned white circle
+for radio-buttons and a slighty rounded
+square for the checkboxes
+*/
+input[type='radio'] + label:before,
+input[type='checkbox'] + label:before {
+    content: '';
+    background: #fff;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+input[type='checkbox'] + label:before {
+    border-radius: 2px;
+}
+/*
+the next shape will be the shape that only
+appears when the input is checked
+take note: opacity:0;
+*/
+input[type='radio'] + label:after,
+input[type='checkbox'] + label:after {
+    content: '';
+    background: #3f4b52;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    /* transitions */
+    transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    /* i've scaled the shape down so it will animate on the :checked state  */
+    transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+}
+input[type='checkbox'] + label:after {
+    border-radius: 1px;
+}
+/*
+now we use the :checked selector to change
+affect the opacity and scale of our checked
+shape
+*/
+input[type='radio']:checked + label:after,
+input[type='checkbox']:checked + label:after {
+    background: #3f4b52;
+ 
+    transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+
+.monBouton{
+margin:15px;
+font-weight: 700;
+text-decoration: none;
+
+width: 120px;
+padding: 7px 10px;
+
+color: #fff;
+background: #5d6e78;
+}
+.monBouton:hover{
+background: #1971a9;
+color: #fff;
+}
+
+#rechercheInput{
+	margin : 5px;
+	padding : 4px;
+	background : #fff;
+}
+#remplir{
+	margin : 5px;
+	padding : 4px;
+	background : #fff;
+}

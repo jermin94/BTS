@@ -1,0 +1,200 @@
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+/*  
+first let's hide the inputs
+instead we'll style our labels to look like checkboxes/radio-buttons
+*/
+input[type='radio'], 
+input[type='checkbox'] {
+    display: none;
+}
+/*
+style the labels
+add extra padding to the left side
+*/
+input[type='radio'] + label,
+input[type='checkbox'] + label {
+    margin: 0;
+    clear: none;
+    display: inline-block;
+    padding: 15px 15px 15px 45px;
+    cursor: pointer;
+    background: #5d6e78;
+    border-bottom: 3px solid #3f4b52;
+    color: #eaeaea;
+    border-radius: 5px;
+    position: relative;
+}
+/*
+hover-state for the labels
+my design reduc
+*/
+input[type='radio'] + label:hover,
+input[type='checkbox'] + label:hover {
+    background: #6b7f8b;
+    border-bottom: 2px solid #3f4b52;
+}
+/*
+style an absolutely positioned white circle
+for radio-buttons and a slighty rounded
+square for the checkboxes
+*/
+input[type='radio'] + label:before,
+input[type='checkbox'] + label:before {
+    content: '';
+    background: #fff;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+input[type='checkbox'] + label:before {
+    border-radius: 2px;
+}
+/*
+the next shape will be the shape that only
+appears when the input is checked
+take note: opacity:0;
+*/
+input[type='radio'] + label:after,
+input[type='checkbox'] + label:after {
+    content: '';
+    background: #3f4b52;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    /* transitions */
+    transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    /* i've scaled the shape down so it will animate on the :checked state  */
+    transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+}
+input[type='checkbox'] + label:after {
+    border-radius: 1px;
+}
+/*
+now we use the :checked selector to change
+affect the opacity and scale of our checked
+shape
+*/
+input[type='radio']:checked + label:after,
+input[type='checkbox']:checked + label:after {
+    background: #3f4b52;
+ 
+    transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
